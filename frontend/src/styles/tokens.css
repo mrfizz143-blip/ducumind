@@ -1,0 +1,162 @@
+:root {
+  /* ---------------------------------------------------------------- */
+  /* Documind design tokens                                          */
+  /* ---------------------------------------------------------------- */
+
+  /* Color — light */
+  --bg: #f6f5f2;
+  --bg-accent: #efeef7;
+  --surface: #ffffff;
+  --surface-subtle: #fbfaf8;
+  --surface-raised: #ffffff;
+  --border: #e9e7e2;
+  --border-strong: #dcd9d2;
+  --border-faint: #f0eee9;
+
+  --text: #191a1e;
+  --text-2: #55575f;
+  --text-3: #8b8d96;
+  --text-invert: #f4f4f6;
+
+  --accent: #4a58c8;
+  --accent-hover: #3d48aa;
+  --accent-active: #333d94;
+  --accent-soft: rgba(74, 88, 200, 0.09);
+  --accent-softer: rgba(74, 88, 200, 0.05);
+  --accent-ring: rgba(74, 88, 200, 0.22);
+
+  --danger: #c4402e;
+  --danger-soft: rgba(196, 64, 46, 0.09);
+  --success: #2f7d52;
+  --success-soft: rgba(47, 125, 82, 0.09);
+  --warning: #a4631a;
+  --warning-soft: rgba(164, 99, 26, 0.1);
+
+  --highlight: rgba(74, 88, 200, 0.14);
+  --marker: #f5e6a7;
+
+  /* Color — dark */
+  --bg-dark: #0e0f13;
+  --bg-accent-dark: #141420;
+  --surface-dark: #16171c;
+  --surface-subtle-dark: #1c1d24;
+  --surface-raised-dark: #1b1c22;
+  --border-dark: #26272e;
+  --border-strong-dark: #34353e;
+  --border-faint-dark: #202128;
+
+  --text-dark: #e6e5e0;
+  --text-2-dark: #9b9da7;
+  --text-3-dark: #6d6f7a;
+  --text-invert-dark: #191a1e;
+
+  --accent-dark: #8490ee;
+  --accent-hover-dark: #97a2f2;
+  --accent-soft-dark: rgba(132, 144, 238, 0.12);
+  --accent-softer-dark: rgba(132, 144, 238, 0.06);
+  --accent-ring-dark: rgba(132, 144, 238, 0.25);
+
+  --danger-dark: #e0705f;
+  --danger-soft-dark: rgba(224, 112, 95, 0.12);
+  --success-dark: #63b184;
+  --success-soft-dark: rgba(99, 177, 132, 0.12);
+  --warning-dark: #d3a05a;
+  --warning-soft-dark: rgba(211, 160, 90, 0.12);
+
+  --highlight-dark: rgba(132, 144, 238, 0.18);
+  --marker-dark: #4a4426;
+
+  /* Typography */
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --fs-11: 0.6875rem;
+  --fs-12: 0.75rem;
+  --fs-13: 0.8125rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
+  --fs-34: 2.125rem;
+
+  /* Spacing */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-7: 32px;
+  --s-8: 40px;
+  --s-9: 48px;
+
+  /* Radii */
+  --r-xs: 5px;
+  --r-sm: 7px;
+  --r-md: 9px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-full: 999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(24, 24, 32, 0.05);
+  --shadow-sm: 0 1px 3px rgba(24, 24, 32, 0.07), 0 1px 2px rgba(24, 24, 32, 0.04);
+  --shadow-md: 0 4px 12px rgba(24, 24, 32, 0.08), 0 2px 4px rgba(24, 24, 32, 0.05);
+  --shadow-lg: 0 12px 32px rgba(24, 24, 32, 0.12), 0 4px 10px rgba(24, 24, 32, 0.06);
+  --shadow-xl: 0 24px 64px rgba(16, 16, 24, 0.2), 0 6px 18px rgba(16, 16, 24, 0.1);
+
+  /* Layout */
+  --sidebar-w: 248px;
+  --sidebar-w-collapsed: 64px;
+  --panel-w: 368px;
+  --topbar-h: 56px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 140ms;
+  --dur-med: 220ms;
+  --dur-slow: 360ms;
+}
+
+[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --bg-accent: var(--bg-accent-dark);
+  --surface: var(--surface-dark);
+  --surface-subtle: var(--surface-subtle-dark);
+  --surface-raised: var(--surface-raised-dark);
+  --border: var(--border-dark);
+  --border-strong: var(--border-strong-dark);
+  --border-faint: var(--border-faint-dark);
+
+  --text: var(--text-dark);
+  --text-2: var(--text-2-dark);
+  --text-3: var(--text-3-dark);
+  --text-invert: var(--text-invert-dark);
+
+  --accent: var(--accent-dark);
+  --accent-hover: var(--accent-hover-dark);
+  --accent-soft: var(--accent-soft-dark);
+  --accent-softer: var(--accent-softer-dark);
+  --accent-ring: var(--accent-ring-dark);
+
+  --danger: var(--danger-dark);
+  --danger-soft: var(--danger-soft-dark);
+  --success: var(--success-dark);
+  --success-soft: var(--success-soft-dark);
+  --warning: var(--warning-dark);
+  --warning-soft: var(--warning-soft-dark);
+
+  --highlight: var(--highlight-dark);
+  --marker: var(--marker-dark);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5), 0 4px 10px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.6), 0 6px 18px rgba(0, 0, 0, 0.4);
+}

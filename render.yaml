@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: rag-assistant
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: APP_ENV
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: MEDIA_DIR
+        value: /tmp/media

@@ -1,0 +1,17 @@
+# Optional dependencies — enable advanced AI features when installed.
+# Cloud LLM / embeddings / vision / speech:
+openai>=1.50.0
+anthropic>=0.40.0
+
+# PostgreSQL + pgvector production vector store:
+psycopg[binary]>=3.2.0
+pgvector>=0.3.0
+
+# Local speech-to-text (downloads ~140MB Whisper model on first use):
+faster-whisper>=1.1.0
+
+# Local OCR (also requires the Tesseract binary installed on the system):
+pytesseract>=0.3.13
+
+# Local cross-encoder reranking (downloads a small transformer model on first use):
+sentence-transformers>=3.0.0
